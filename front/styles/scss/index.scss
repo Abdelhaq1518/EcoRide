@@ -1,0 +1,42 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+// 1. Import des variables personnalisées
+
+@import "custom";
+
+body {
+  background-color: $primary;
+}
+
+//header navbar//
+.logo-ecoride {
+  height: 80px; //
+  width: 200px;
+}
+
+.navbar-custom-warning {
+  background-color: #dad4b1;
+}
+.navbar-nav {
+  margin-right: 5rem;
+}
+
+// liens (nav-link)
+
+.nav-link {
+  color: #343a40;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease, font-weight 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: lighten(#343a40, 15%);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    font-weight: bold; // <-- bold au hover/focus
+  }
+}
+
+// lien actif
+.nav-link.active {
+  font-weight: bold;
+}
